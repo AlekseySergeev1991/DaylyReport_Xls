@@ -165,7 +165,7 @@ public class DaylyReport {
         sh.setColumnWidth(54, 40 * 256);
         sh.setColumnWidth(55, 40 * 256);
 
-        sh.createFreezePane(4, 9);
+        sh.createFreezePane(4, 10);
 
         SXSSFRow row_1 = sh.createRow(0);
         row_1.setHeight((short) 435);
@@ -219,7 +219,7 @@ public class DaylyReport {
         String now = new SimpleDateFormat("dd.MM.yyyy HH:mm").format(new Date());
         SXSSFRow row_6 = sh.createRow(5);
         row_6.setHeight((short) 435);
-        SXSSFCell cell_6_1 = row_5.createCell(0);
+        SXSSFCell cell_6_1 = row_6.createCell(0);
         cell_6_1.setCellStyle(nowStyle);
         cell_6_1.setCellValue("Отчет сформирован  " + now);
         CellRangeAddress nowDone = new CellRangeAddress(5, 5, 0, 3);
