@@ -1,9 +1,9 @@
 package ru.tecon.daylyReport.ejb;
 
+import jakarta.annotation.Resource;
+import jakarta.ejb.Stateless;
 import ru.tecon.daylyReport.DaylyReport;
 
-import javax.annotation.Resource;
-import javax.ejb.Stateless;
 import javax.sql.DataSource;
 import java.time.LocalDateTime;
 import java.util.concurrent.ExecutorService;

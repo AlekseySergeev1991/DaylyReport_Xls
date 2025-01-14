@@ -157,7 +157,7 @@ public class DaylyReport {
         sh.setColumnWidth(38, 17 * 256);
         sh.setColumnWidth(40, 17 * 256);
         sh.setColumnWidth(42, 17 * 256);
-        sh.setColumnWidth(44, 8 * 256);
+        sh.setColumnWidth(44, 13 * 256);
         sh.setColumnWidth(46, 15 * 256);
         sh.setColumnWidth(48, 17 * 256);
         sh.setColumnWidth(50, 20 * 256);
@@ -279,7 +279,7 @@ public class DaylyReport {
 
         SXSSFCell cell_8_5 = row_8.createCell(4);
         cell_8_5.setCellStyle(tableHeaderStyle);
-        cell_8_5.setCellValue("Тгмц");
+        cell_8_5.setCellValue("Тгмц" + ", " + "\u2103");
         CellRangeAddress headerAddress = new CellRangeAddress(7, 9, 4, 4);
         sh.addMergedRegion(headerAddress);
         CellRangeAddress borderForAddress = new CellRangeAddress(7, 9, 4, 4);
@@ -312,7 +312,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_7 = row_9.createCell(6);
         cell_9_7.setCellStyle(tableHeaderStyle);
-        cell_9_7.setCellValue("Т1");
+        cell_9_7.setCellValue("Т1" + ", " + "\u2103");
         SXSSFCell cell_10_7 = row_10.createCell(6);
         cell_10_7.setCellStyle(tableHeaderStyle);
         cell_10_7.setCellValue("Прямая");
@@ -327,7 +327,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_9 = row_9.createCell(8);
         cell_9_9.setCellStyle(tableHeaderStyle);
-        cell_9_9.setCellValue("Т2");
+        cell_9_9.setCellValue("Т2" + ", " + "\u2103");
         SXSSFCell cell_10_9 = row_10.createCell(8);
         cell_10_9.setCellStyle(tableHeaderStyle);
         cell_10_9.setCellValue("Обратная");
@@ -342,7 +342,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_11 = row_9.createCell(10);
         cell_9_11.setCellStyle(tableHeaderStyle);
-        cell_9_11.setCellValue("P1");
+        cell_9_11.setCellValue("P1, МПа");
         SXSSFCell cell_10_11 = row_10.createCell(10);
         cell_10_11.setCellStyle(tableHeaderStyle);
         cell_10_11.setCellValue("Прямая");
@@ -357,7 +357,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_13 = row_9.createCell(12);
         cell_9_13.setCellStyle(tableHeaderStyle);
-        cell_9_13.setCellValue("P2");
+        cell_9_13.setCellValue("P2, МПа");
         SXSSFCell cell_10_13 = row_10.createCell(12);
         cell_10_13.setCellStyle(tableHeaderStyle);
         cell_10_13.setCellValue("Обратная");
@@ -383,7 +383,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_15 = row_9.createCell(14);
         cell_9_15.setCellStyle(tableHeaderStyle);
-        cell_9_15.setCellValue("Т3");
+        cell_9_15.setCellValue("Т3" + ", " + "\u2103");
         SXSSFCell cell_10_15 = row_10.createCell(14);
         cell_10_15.setCellStyle(tableHeaderStyle);
         cell_10_15.setCellValue("Прямая");
@@ -398,7 +398,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_17 = row_9.createCell(16);
         cell_9_17.setCellStyle(tableHeaderStyle);
-        cell_9_17.setCellValue("Т4");
+        cell_9_17.setCellValue("Т4" + ", " + "\u2103");
         SXSSFCell cell_10_17 = row_10.createCell(16);
         cell_10_17.setCellStyle(tableHeaderStyle);
         cell_10_17.setCellValue("Обратная");
@@ -413,7 +413,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_19 = row_9.createCell(18);
         cell_9_19.setCellStyle(tableHeaderStyle);
-        cell_9_19.setCellValue("P3");
+        cell_9_19.setCellValue("P3, МПа");
         SXSSFCell cell_10_19 = row_10.createCell(18);
         cell_10_19.setCellStyle(tableHeaderStyle);
         cell_10_19.setCellValue("Прямая");
@@ -428,7 +428,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_21 = row_9.createCell(20);
         cell_9_21.setCellStyle(tableHeaderStyle);
-        cell_9_21.setCellValue("P4");
+        cell_9_21.setCellValue("P4, МПа");
         SXSSFCell cell_10_21 = row_10.createCell(20);
         cell_10_21.setCellStyle(tableHeaderStyle);
         cell_10_21.setCellValue("Обратная");
@@ -454,7 +454,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_23 = row_9.createCell(22);
         cell_9_23.setCellStyle(tableHeaderStyle);
-        cell_9_23.setCellValue("Т7");
+        cell_9_23.setCellValue("Т7" + ", " + "\u2103");
         SXSSFCell cell_10_23 = row_10.createCell(22);
         cell_10_23.setCellStyle(tableHeaderStyle);
         cell_10_23.setCellValue("после ВВП I зона");
@@ -469,7 +469,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_25 = row_9.createCell(24);
         cell_9_25.setCellStyle(tableHeaderStyle);
-        cell_9_25.setCellValue("T7`");
+        cell_9_25.setCellValue("T7`"  + ", " + "\u2103");
         SXSSFCell cell_10_25 = row_10.createCell(24);
         cell_10_25.setCellStyle(tableHeaderStyle);
         cell_10_25.setCellValue("после ВВП II зона");
@@ -484,7 +484,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_27 = row_9.createCell(26);
         cell_9_27.setCellStyle(tableHeaderStyle);
-        cell_9_27.setCellValue("P7");
+        cell_9_27.setCellValue("P7, МПа");
         SXSSFCell cell_10_27 = row_10.createCell(26);
         cell_10_27.setCellStyle(tableHeaderStyle);
         cell_10_27.setCellValue("ГВС на I зону");
@@ -499,7 +499,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_29 = row_9.createCell(28);
         cell_9_29.setCellStyle(tableHeaderStyle);
-        cell_9_29.setCellValue("P7`");
+        cell_9_29.setCellValue("P7`, МПа");
         SXSSFCell cell_10_29 = row_10.createCell(28);
         cell_10_29.setCellStyle(tableHeaderStyle);
         cell_10_29.setCellValue("ГВС на II зону");
@@ -514,7 +514,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_31 = row_9.createCell(30);
         cell_9_31.setCellStyle(tableHeaderStyle);
-        cell_9_31.setCellValue("Т13");
+        cell_9_31.setCellValue("Т13"  + ", " + "\u2103");
         SXSSFCell cell_10_31 = row_10.createCell(30);
         cell_10_31.setCellStyle(tableHeaderStyle);
         cell_10_31.setCellValue("В циркуляц. линии I зоны");
@@ -529,7 +529,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_33 = row_9.createCell(32);
         cell_9_33.setCellStyle(tableHeaderStyle);
-        cell_9_33.setCellValue("T13`");
+        cell_9_33.setCellValue("T13`"  + ", " + "\u2103");
         SXSSFCell cell_10_33 = row_10.createCell(32);
         cell_10_33.setCellStyle(tableHeaderStyle);
         cell_10_33.setCellValue("В циркуляц. линии II зоны");
@@ -544,7 +544,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_35 = row_9.createCell(34);
         cell_9_35.setCellStyle(tableHeaderStyle);
-        cell_9_35.setCellValue("P13");
+        cell_9_35.setCellValue("P13, МПа");
         SXSSFCell cell_10_35 = row_10.createCell(34);
         cell_10_35.setCellStyle(tableHeaderStyle);
         cell_10_35.setCellValue("В циркуляц. линии I зоны");
@@ -559,7 +559,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_37 = row_9.createCell(36);
         cell_9_37.setCellStyle(tableHeaderStyle);
-        cell_9_37.setCellValue("P13`");
+        cell_9_37.setCellValue("P13`, МПа");
         SXSSFCell cell_10_37 = row_10.createCell(36);
         cell_10_37.setCellStyle(tableHeaderStyle);
         cell_10_37.setCellValue("В циркуляц. линии II зоны");
@@ -585,7 +585,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_39 = row_9.createCell(38);
         cell_9_39.setCellStyle(tableHeaderStyle);
-        cell_9_39.setCellValue("Pгор.хв");
+        cell_9_39.setCellValue("Pгор.хв, МПа");
         SXSSFCell cell_10_39 = row_10.createCell(38);
         cell_10_39.setCellStyle(tableHeaderStyle);
         cell_10_39.setCellValue("В горводопроводе");
@@ -600,7 +600,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_41 = row_9.createCell(40);
         cell_9_41.setCellStyle(tableHeaderStyle);
-        cell_9_41.setCellValue("Pхв");
+        cell_9_41.setCellValue("Pхв, МПа");
         SXSSFCell cell_10_41 = row_10.createCell(40);
         cell_10_41.setCellStyle(tableHeaderStyle);
         cell_10_41.setCellValue("На выходе из ЦТП на I зону");
@@ -615,7 +615,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_43 = row_9.createCell(42);
         cell_9_43.setCellStyle(tableHeaderStyle);
-        cell_9_43.setCellValue("Pхв`");
+        cell_9_43.setCellValue("Pхв`, МПа");
         SXSSFCell cell_10_43 = row_10.createCell(42);
         cell_10_43.setCellStyle(tableHeaderStyle);
         cell_10_43.setCellValue("На выходе из ЦТП на II зону");
@@ -641,7 +641,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_45 = row_9.createCell(44);
         cell_9_45.setCellStyle(tableHeaderStyle);
-        cell_9_45.setCellValue("Qтс");
+        cell_9_45.setCellValue("Qтс, Гкал/ч");
         SXSSFCell cell_10_45 = row_10.createCell(44);
         cell_10_45.setCellStyle(tableHeaderStyle);
         cell_10_45.setCellValue("Расход тепла");
@@ -656,7 +656,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_47 = row_9.createCell(46);
         cell_9_47.setCellStyle(tableHeaderStyle);
-        cell_9_47.setCellValue("Gп");
+        cell_9_47.setCellValue("Gп, Тонн/ч");
         SXSSFCell cell_10_47 = row_10.createCell(46);
         cell_10_47.setCellStyle(tableHeaderStyle);
         cell_10_47.setCellValue("Водомер на подпитке");
@@ -671,7 +671,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_49 = row_9.createCell(48);
         cell_9_49.setCellStyle(tableHeaderStyle);
-        cell_9_49.setCellValue("Расх. ЭЭ");
+        cell_9_49.setCellValue("Расх. ЭЭ, кВт/ч");
         SXSSFCell cell_10_49 = row_10.createCell(48);
         cell_10_49.setCellStyle(tableHeaderStyle);
         cell_10_49.setCellValue("Общий расход электроэнергии");
@@ -686,7 +686,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_51 = row_9.createCell(50);
         cell_9_51.setCellStyle(tableHeaderStyle);
-        cell_9_51.setCellValue("Расх. Эхвс");
+        cell_9_51.setCellValue("Расх. Эхвс, кВт/ч");
         SXSSFCell cell_10_51 = row_10.createCell(50);
         cell_10_51.setCellStyle(tableHeaderStyle);
         cell_10_51.setCellValue("Расход электроэнергии на насосы ХВС");
@@ -701,7 +701,7 @@ public class DaylyReport {
 
         SXSSFCell cell_9_53 = row_9.createCell(52);
         cell_9_53.setCellStyle(tableHeaderStyle);
-        cell_9_53.setCellValue("V8");
+        cell_9_53.setCellValue("V8, М.куб/ч");
         SXSSFCell cell_10_53 = row_10.createCell(52);
         cell_10_53.setCellStyle(tableHeaderStyle);
         cell_10_53.setCellValue("Расход холодной воды на нужды ГВС");
